@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-color: maroon;
+}
+.Titulo{
+  color: rgb(251, 255, 0);
+}
+
+.container {
+  padding: 50px 0;
+  max-width: 300px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+button {
+  background-color: rgb(62, 62, 255);
+  color: white;
+  padding: 0.5em 2em;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+
+}
+button:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+input {
+  padding: 0.5em;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline: none;
+}
+
+.bx.bxs-trash {
+  color: white;
+  background-color: rgb(255, 57, 57);
+  padding: 5px;
+  border-radius: 0.3em;
+}
+
+li .bx {
+  margin-left: 0.5em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+li .bx:hover {
+  cursor: pointer;
+  background-color: rgb(255, 57, 57);
+  transform: scale(0.9);
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+ol .elementList {
+  background-color: rgb(57, 57, 255);
+  border-radius: 0.5em;
+  color: white;
+  padding: 0.5em;
+}
+.titulo{
+  color: white;
+}
+h1:hover {
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;}
+  
+#taskList{
+  color: white;
+}
+
+#newTask{
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  opacity: 0.96;
+}
+
+@keyframes moverImagen {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateY(200px); 
+  }
+}
+
+
+.contenedor img {
+  animation: moverImagen 3s linear infinite; 
+}
